@@ -1,0 +1,21 @@
+#exam 5th question
+#Given data of weight of 16 twelve-ounce cans
+import numpy as np
+import scipy as stat
+wt = [11.95,11.91,11.86,11.94,12.00,11.93,12.00,11.94,12.10,11.95,11.99,11.94,11.89,12.01,11.99,11.94]
+print("mean is :",np.mean(wt))
+print("median is :",np.median(wt))
+print("mode is :",)
+cumfreq = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+for i in range(0,16):
+    cumfreq[i]=sum(cumfreq)+wt[i]
+    
+print(cumfreq)    
+
+
+
+
+mean is : 11.95875
+median is : 11.945
+mode is :
+[11.95, 23.86, 47.67, 95.42, 190.9, 381.73, 763.53, 1527.0, 3054.16, 6108.169999999999, 12216.38, 24432.709999999995, 48865.369999999995, 97730.85999999999, 195461.69999999995, 390923.3499999999]
