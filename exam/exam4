@@ -1,0 +1,16 @@
+import numpy as np
+family = [0,0,0,0,0,0,0,0,0,0]
+for i in range(0,10):
+    
+    family[i] =input().split(' ')
+print(family)
+print(family[0][0])
+for i in range(0,10):
+    if(int(family[i][1]) >= 60):
+        print(family[i][0],"= old")
+    if(int(family[i][1]) >= 30):
+        print(family[i][0],"= middle")
+    if(int(family[i][1]) >= 17):
+        print(family[i][0],"= old")
+    if(int(family[i][1]) < 17):
+        print(family[i][0],"= old")    
