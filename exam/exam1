@@ -1,0 +1,23 @@
+import numpy as np
+import re
+#EXAM1
+para= input()
+print(para)
+
+
+
+
+line = re.sub('[^A-Za-z0-9]',' ',para)
+print(line)
+
+words = para.split()
+print(words)
+count = {}
+for word in words:
+    if word not in count:
+        count[word] = 0
+        
+    count[word] += 1
+    
+print(count) 
+
