@@ -1,0 +1,46 @@
+#EXAM 2 code
+import numpy as np
+names = ['a','b','c','d','e','f','g','h','i','j']
+mark1 = [1,2,3,4,5,6,7,8,9,0]
+mark2 = [1,2,3,4,5,6,7,8,9,0]
+mark3 = [1,2,3,4,5,6,7,8,9,0]
+print(mark1.sort())
+print(mark2.sort())
+print(mark3.sort())
+for k in range(0,10):
+    
+    print(names[k],mark1[k],mark2[k],mark3[k])
+
+mean1 = print(np.mean(mark1))
+mean2 = print(np.mean(mark2))
+mean3 = print(np.mean(mark3))
+med1 = print(np.median(mark1))
+med2 = print(np.median(mark2))
+med3 = print(np.median(mark3))
+total =[0,0,0,0,0,0,0,0,0,0]
+for i in range(0,10):
+    total[i]=mark1[i]+mark2[i]+mark3[i]
+    print(total[i],i)
+total.sort()
+print(total)
+print(total[-3:])
+
+for i in range(0,10):
+    if(total[i]>=25):
+        print(names[i],"=A+")
+        break
+    if(total[i]>=20):
+        print(names[i],"=A")
+        break
+    if(total[i]>=15):
+        print(names[i],"=B")
+        break
+    if(total[i]>=10):
+        print(names[i],"=B+")
+        break
+    if(total[i]>=5):
+        print(names[i],"=C")
+        break
+    if(total[i]<5):
+        print(names[i],"=D")
+    
