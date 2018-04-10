@@ -1,0 +1,17 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Tue Apr 10 23:41:35 2018
+
+@author: Sweet Home
+"""
+
+import pandas as pd
+df = pd.read_excel(r"C:\\Users\\user\\Python Programs\\April10\\prog5.xlsx")
+print("Summary statistics:-\n")
+print(df.describe())
+print("\nSummary statistics for unit price\n")
+print(df["Unit price"].describe())
+print("\nData type for each field")
+print(df.dtypes)
+customers = df[["Name","Ext price"]]
+print(customers)
